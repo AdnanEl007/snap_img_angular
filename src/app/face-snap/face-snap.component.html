@@ -1,0 +1,18 @@
+<div class="face-snap-card" [ngClass]="{ snapped: buttonText === 'Oops, UnSnap!' }">
+    <h2>{{ faceSnap.title | uppercase }}</h2>
+    <!--<p>{{ 456014.69 | number: '1.0-1' }}</p>-->
+    <!--<p>{{ 0.3385 | percent : '1.0-1'}}</p>-->
+    <!--<img src="{{ imageUrl }}" alt="{{ title }}">   la ligne suivante la meilleur methode pour afficher avec n importe quel variable --> 
+    <p>{{ faceSnap.description }}</p>
+    <!--<p *ngIf="faceSnap.location"> Photo taken in {{ faceSnap.location }}</p>
+    <p>{{ faceSnap.worth | currency : 'EUR' }}</p>
+    <img [src]=" faceSnap.imageUrl " [alt]=" faceSnap.title ">
+    <p>Uploaded on: {{ faceSnap.creatDate | date: 'medium' }}</p>
+    
+    <p>
+        <button (click)="onSnap()">{{ buttonText }}</button>
+        <span [ngStyle]="{ color: 'rgb(0,' + faceSnap.snaps +',0)' }">👌 {{ faceSnap.snaps }}</span>
+    </p>-->
+    <button (click)="onViewFaceSnap()">VIEW</button>
+</div>
+
